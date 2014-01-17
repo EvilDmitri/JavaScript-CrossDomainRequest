@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+//var data={"name":"Hola"};
+$(document).ready(function(){
+    $('#subbit').click(function(){
+        $.ajax({
+            url: '//www.example.com',
+            type: 'GET',
+            //data: data,
+            //dataType: 'json',
+            success: function(data,status){
+                alert(data.name);
+                //alert("Data" + data +"status"+status);
+            }
+       });
+       return false;
+    });
+});
+</script>
+
+<INPUT TYPE=BUTTON ID="subbit" OnClick="" VALUE="Send Request">
+
+<div id="textDiv">
+
+    </div>
+
+
+</body>
+</html>
